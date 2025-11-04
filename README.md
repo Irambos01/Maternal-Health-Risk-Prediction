@@ -53,7 +53,9 @@ The Gradient Boosting Classifier was selected because of its significantly super
 
 Superior EAR Recall: At {0.86}, the GB model successfully identifies 12% percentage points more of the actual Early Adolescence Risk (EAR) cases compared to the RF model (0.74). This minimizes the risk of missing a critical early-risk patient, aligning perfectly with the project's goal.
 
-4. Final Feature Importance (Gradient Boosting)
+4. Final Feature Importance (Random Forest and Gradient Boosting)
+
+Before any feature was engineered, The Age variable was the most predictor(taking 50%, as compared to other predictors). The Feature engineering was done with the aim to distribute the predictive power, to most clinically-relevant factors such as blood sugar, Heart rate, Previous complications,...
 
 The model's predictions are primarily driven by these high-impact features:
 1. Feature Importance for Random Forest
@@ -65,4 +67,4 @@ The model's predictions are primarily driven by these high-impact features:
 
 <img width="989" height="590" alt="Untitled" src="https://github.com/user-attachments/assets/fc8ac725-3343-4b95-99ce-d1ffc97c33ac" />
 
-The importance scores confirm that the engineered features, particularly are valuable predictors for the final models.
+The importance scores confirm that the models takes into account the clinical factors to be the highest predictors.(Blood Sugar, Heart rate, BMI). Also the early adolescence Risk group (Age_12_17), remains top predictor. 
